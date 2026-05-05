@@ -4,8 +4,7 @@
   #:use-module (guix build-system gnu)
   #:use-module (guix gexp)
   #:use-module ((guix licenses) #:prefix license:)
-  #:use-module (gnu packages gtk)
-  #:use-module (gnu packages glib))
+  #:use-module (gnu packages web))
 
 (define-public gruvbox-gtk-theme
   (let ((commit "578cd220b5ff6e86b078a6111d26bb20ec8c733f")
