@@ -1,4 +1,4 @@
-(define-module (themes)
+(define-module (GUR packages themes)
   #:use-module (guix packages)
   #:use-module (guix git-download)
   #:use-module (guix build-system copy)
