@@ -11,7 +11,8 @@ Add this channel to `~/.config/guix/channels.scm`:
   (list
     (channel
       (name 'guix-user-repository)
-      (url "https://github.com/Arthur-Gusmao/GUR")))
+      (url "https://github.com/Arthur-Gusmao/GUR")
+      (branch "main")))
   %default-channels)
 ```
 
