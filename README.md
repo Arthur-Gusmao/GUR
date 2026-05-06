@@ -27,7 +27,7 @@ guix pull
 | Package | Version | Description |
 |---|---|---|
 | `gruvbox-gtk-theme` | 0.0.0 | GTK 3/4 theme based on the Gruvbox Material colour palette |
-| `gruvbox-icons` | 0.0.0 | Icon theme companion for Gruvbox GTK Theme |
+| `gruvbox-plus-icon-pack` | 6.4.0 | Icon theme companion for Gruvbox GTK Theme |
 
 ## License
 
