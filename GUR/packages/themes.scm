@@ -60,7 +60,7 @@ window managers.")
              (commit commit)))
        (sha256
         (base32
-         "1b3ilbcfvf9lziq7v2cscln97x14dcf1vhnyv95nv5qi46wdf422"))
+         "0fma1gm4548m4hsyn8215m6bk4w5scmbpbdrr78wpiid78c89fia"))
        (file-name (git-file-name name version))))
      (build-system copy-build-system)
      (arguments
