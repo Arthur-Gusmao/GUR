@@ -47,11 +47,11 @@ window managers.")
      (license license:gpl3))))
 
 (define-public gruvbox-plus-icon-pack
-  (let ((commit "357d7d2d1fa15c15a4700e604d66371ea43c1391")
+  (let ((commit "7026451029f28fd7ee314ba2e3a42fd32cea00be")
         (revision "0"))
     (package
      (name "gruvbox-plus-icon-pack")
-     (version (git-version "6.3.0" revision commit))
+     (version (git-version "6.4.0" revision commit))
      (source
       (origin
        (method git-fetch)
@@ -60,7 +60,7 @@ window managers.")
              (commit commit)))
        (sha256
         (base32
-         "009xsrngas1ddrchh3n3ynlvlmw6n3i9a6h457y7zvbghp4kacsk"))
+         "1b3ilbcfvf9lziq7v2cscln97x14dcf1vhnyv95nv5qi46wdf422"))
        (file-name (git-file-name name version))))
      (build-system copy-build-system)
      (arguments
