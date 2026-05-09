@@ -1,0 +1,37 @@
+* Guix User Repository
+
+Personal [[https://guix.gnu.org][GNU Guix]] channel with custom packages not yet available in the official Guix repository.
+
+** Usage
+
+Add this channel to =~/.config/guix/channels.scm=:
+
+#+begin_src scheme
+(append
+  (list
+    (channel
+      (name 'guix-user-repository)
+      (url "https://github.com/Arthur-Gusmao/GUR")
+      (branch "main")))
+  %default-channels)
+#+end_src
+
+Then run:
+
+#+begin_src bash
+guix pull
+#+end_src
+
+** Packages
+
+| Package                | Description                                                           |
+|------------------------+-----------------------------------------------------------------------|
+| gruvbox-gtk-theme      | GTK 3/4 theme inspired by the Gruvbox Material colour palette         |
+| gruvbox-plus-icon-pack | Matching icon theme for the Gruvbox GTK desktop experience            |
+| discord                | Proprietary Discord desktop client packaged for GNU Guix              |
+| claude                 | Command-line interface for interacting with Anthropic Claude models   |
+| ollama                 | Local large language model runtime and model management platform      |
+
+** License
+
+GPL-3.0
