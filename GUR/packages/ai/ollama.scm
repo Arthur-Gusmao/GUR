@@ -59,7 +59,7 @@
      `(("glibc" ,glibc)
        ("gcc:lib" ,gcc "lib")))
     (supported-systems '("x86_64-linux"))
-    (synopsis "Rodar modelos de linguagem localmente")
+    (synopsis "Run llm models localy")
     (description "Ollama permite rodar LLMs open source localmente via CLI e API REST.")
     (home-page "https://ollama.com")
     (license license:expat)))
