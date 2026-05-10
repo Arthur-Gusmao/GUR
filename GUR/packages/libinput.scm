@@ -1,5 +1,5 @@
 (define-module (GUR packages libinput)
-  #:use-module (gnu packages xdisorg)
+  #:use-module (gnu packages freedesktop)
   #:use-module (guix packages)
   #:use-module (guix gexp)
   #:use-module (guix utils))
