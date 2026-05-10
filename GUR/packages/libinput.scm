@@ -1,26 +1,32 @@
 (define-module (GUR packages libinput)
-  #:use-module (gnu packages freedesktop)
-  #:use-module (gnu packages xdisorg)
+  #:use-module ((gnu packages freedesktop)
+                #:select (libinput)
+                #:prefix upstream:)
   #:use-module (guix packages)
   #:use-module (guix gexp)
   #:use-module (guix utils))
 
 (define-public libinput
   (package
-    (inherit libinput)
+    (inherit upstream:libinput)
 
     (arguments
-     (substitute-keyword-arguments (package-arguments libinput)
+     (substitute-keyword-arguments
+         (package-arguments upstream:libinput)
+
        ((#:phases phases)
+
         #~(modify-phases #$phases
+
             (add-after 'install 'add-quirks
+
               (lambda* (#:key outputs #:allow-other-keys)
 
                 (let* ((out (assoc-ref outputs "out"))
                        (dir (string-append out "/etc/libinput"))
                        (file (string-append
                               dir
-                              "/local-overrides.quirks")))
+                              "/libinput-overrides.quirks")))
 
                   (mkdir-p dir)
 
