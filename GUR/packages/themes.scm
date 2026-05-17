@@ -115,6 +115,7 @@ dark and light variants.")
                                    (chdir "themes")
                                    (invoke "bash" "install.sh"
                                            "-d" (string-append #$output "/share/themes")
+                                           "--tweaks" "dragon"
                                            "-c" "dark")))
                         (delete 'install))))
      (home-page "https://github.com/Fausto-Korpsvart/Kanagawa-GKT-Theme")
